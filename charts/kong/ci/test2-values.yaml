@@ -2,6 +2,7 @@
 # - ingressController deploys with a database
 # - stream listens work
 # - a mixture of controller, Kong, and shared volumes successfully mount
+# - watchNamespaces is set
 ingressController:
   enabled: true
   installCRDs: false
@@ -9,6 +10,8 @@ ingressController:
     anonymous_reports: "false"
   customEnv:
     TZ: "Europe/Berlin"
+  watchNamespaces:
+  - default
 postgresql:
   enabled: true
   auth:

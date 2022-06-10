@@ -4,6 +4,8 @@
 
 * Added option to disable test job pods.
   [#598](https://github.com/Kong/charts/issues/598)
+* Added ClusterRole for cluster-scoped resources when using watchNamespaces.
+  [#611](https://github.com/Kong/charts/issues/611)
 
 ## 2.9.1
 
